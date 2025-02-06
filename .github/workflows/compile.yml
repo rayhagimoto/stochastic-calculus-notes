@@ -1,0 +1,36 @@
+name: Compile and Commit Typst Files
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+      - name: Compile Typst to PDF
+        uses: rayhagimoto/compile-typst-action@v1
+        with:
+          source_paths: 'src/main.typ'
+          output_paths: 'stochastic-calculus.pdf'
+      - name: Deploy to gh-pages
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+
+          # Switch to gh-pages branch (or create it if necessary)
+          git checkout gh-pages 2>/dev/null || git checkout --orphan gh-pages
+          git rm -rf .  # Remove all existing files to avoid conflicts
+
+          # Move compiled PDF to the root
+          mv stochastic-calculus.pdf stochastic-calculus.pdf
+          git add stochastic-calculus.pdf
+
+          # Commit and force push
+          git commit -m "[continuous deployment]: Compiled Typst to PDF"
+          git push --force origin gh-pages
