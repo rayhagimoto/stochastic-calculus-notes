@@ -28,7 +28,6 @@ jobs:
           git rm -rf .  # Remove all existing files to avoid conflicts
 
           # Move compiled PDF to the root
-          mv stochastic-calculus.pdf stochastic-calculus.pdf
           git add stochastic-calculus.pdf
 
           # Commit and force push
