@@ -134,7 +134,7 @@ Denote its value at time $t$ by $Pi_t$.
 $
   Pi_t = Delta S_t + B med .
 $ <eq:bs-portfolio>
-Suppose that we want to choose $Delta$ and $B$ so that the change in the value of after waiting a time interval $dif t$ exactly matches the change in the value of the option over that same infinitesimal period. 
+Suppose that we want to choose $Delta$ and $B$ so that the change in the value after waiting a time interval $dif t$ exactly matches the change in the value of the option over that same infinitesimal period. 
 In other words, we're looking for $Delta$ and $B$ such that 
 $
   dif Pi_t = dif V(t, S_t) med .
