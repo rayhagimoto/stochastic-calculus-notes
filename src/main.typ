@@ -159,7 +159,17 @@ In other words, we're looking for $Delta$ and $B$ such that
 $
   dif Pi_t = dif V(t, S_t) med .
 $ <eq:bs-deriv-2>
-So long as #eref(<eq:bs-deriv-2>) is satisfied we must have $Pi_t = V(t, S_t)$ for all $t$. Otherwise, 
+So long as #eref(<eq:bs-deriv-2>) is satisfied we must have $Pi_t = V(t, S_t)$ for all $t$. 
+
+Otherwise, if $Pi_t != V(t, S_t)$, then there would exist an opportunity to construct a risk-free profit.
+Specifically, if $Pi_t > V(t, S_t)$, one could sell the portfolio and buy the option, locking in a risk-free gain.
+Conversely, if $Pi_t < V(t, S_t)$, one could sell the option and buy the replicating portfolio, again guaranteeing a profit without risk.
+Such arbitrage opportunities cannot persist in an efficient market, meaning that the equality
+$
+  Pi_t = V(t, S_t)
+$
+must hold at all times.
+
 
 One one hand, computing the differential of #eref(<eq:bs-deriv-2>) yields
 $
