@@ -55,7 +55,7 @@ $
 $
 Setting this equal to $dif V(t, S_t)$ which is given by #eref(<eq:bs-deriv-1>) and using the fact that $S_t$ is a geometric Brownian motion, we get 
 $
-  Delta (mu S_t dif t + sigma S_t dif W_t) + r B dif t equiv [(diff V) / (diff t) + mu S_t (diff V) / (diff S) + 1/2 sigma^2 S_t^2 (diff^2 V) / (diff S^2)] dif t +  sigma S_t (diff V) / (diff S) dif W_t .
+  Delta (mu S_t dif t + sigma S_t dif W_t) + r B dif t equiv [(diff V) / (diff t) + mu S_t (diff V) / (diff S) + 1/2 sigma^2 S_t^2 (diff^2 V) / (diff S^2)] dif t +  sigma S_t (diff V) / (diff S) dif W_t . #h(2em)
 $ <eq:bs-deriv-3>
 In order to eliminate the randomness from this expression we set
 
