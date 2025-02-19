@@ -88,7 +88,7 @@ Assuming the "initial" condition $V(T, S_T) = max(S_T - K, 0)$ one obtains the s
   where
   $
     d_(plus.minus) = (ln(S / K) + (r plus.minus sigma^2 / 2) t) / (sigma sqrt(t))
-  $
+  $ <eq:d-plus-minus>
   and $Phi$ is the standard normal CDF $Phi(x) = integral_(-infinity)^x 1 / sqrt(2 pi) e^(-s^2/2) thin dif s$.
 ]
 
