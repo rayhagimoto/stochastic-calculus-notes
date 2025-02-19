@@ -111,8 +111,11 @@ Since it's important I'll highlight it one more time.
 #bluebox[
   *Put-call parity*
   $
-    C - P = S - K e^(- r t)
+    C - P = S - K e^(- r T)
   $ <eq:put-call-parity>
+
+  This formula holds not just at expiration but at all times.
+  It is enforced by the requirement of no-arbitrage.
 ]
 
 == Approximations and other useful identities
