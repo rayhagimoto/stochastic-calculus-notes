@@ -49,7 +49,7 @@ $
 must hold at all times.
 
 
-One one hand, computing the differential of #eref(<eq:bs-deriv-2>) yields
+On one hand, computing the differential of #eref(<eq:bs-deriv-2>) yields
 $
   dif Pi_t = Delta dif S_t + r B dif t med .
 $
