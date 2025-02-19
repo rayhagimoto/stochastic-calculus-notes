@@ -60,7 +60,7 @@ At $S = K$ this function has effectively $+infinity$ convexity ($Gamma -> infini
     Call option price assuming $K = 100$, $r = 0.05$, $sigma = 0.1$ versus spot for different DTEs shown in the legend. 
     The legend also shows the $Gamma$ evaluated at the strike. It shows that $Gamma$ decreases with $sqrt(T)$.
   ]
-)
+) <fig:call-vs-stock-price-DTE>
 
 _Rho_
 
@@ -90,10 +90,22 @@ Another way to see this:
 - This makes the put less valuable today because the strike price effectively "shrinks" in real terms as rates rise.  
 
 
-== Trader terminology
+== Option portfolios
 
-Motivating questions:
-+ Suppose you're long one call with expiration at $T_1$ and short another call in the same underlying and the same strike but expiration at $T_2 > T_1$. Is your position 
+#set enum(numbering: "1a.")
+
++ Suppose you're long one ATM call with expiration at $T_1$ and short another ATM call in the same underlying and the same strike but expiration at $T_2 > T_1$. Is your position 
   + long $rho$?
   + long $cal(V)$?
   + long the underlying?
+
+Since calls increase in value with $r$ the long call is long Rho and the short call is short Rho.
+However, the effect of interest is greater when there is more time to expiration so the portfolio is net short Rho.
+Something similar can be said for $cal(V)$. 
+The position is net short $cal(V)$.
+Delta is a bit tricky but we can figure it out in a few ways. 
+First of all, we can approximate $Delta approx Phi(d_1) ~ (r/sigma + sigma) sqrt(T)$ (where I've ignored a term that decays like $1 slash sqrt(T)$ as well as constant terms, because I only care about the dominant scaling with $T$). 
+This suggests that $Delta$ will generally grow with time to expiration.
+So the position is short the stock.
+Another way to see this is to look at the slopes of the curves in @fig:call-vs-stock-price-DTE. 
+As DTE gets smaller the change in slope becomes more dramatic and asymptotes to $Delta = 0.5$ for very small $T$.
