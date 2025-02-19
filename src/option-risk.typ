@@ -62,7 +62,32 @@ At $S = K$ this function has effectively $+infinity$ convexity ($Gamma -> infini
   ]
 )
 
+_Rho_
 
+*Calls:*
+$K T e^(-r T) Phi(d_-)$. For small $r$, and ATM, this is approximately $0.5 thin K T (1 - r T)$. 
+Therefore longer dated calls (larger $T$), increase in value more when interest rates increase. 
+Why? 
+If you think of a call as a leveraged position in a stock, then imagine if the stock is worth \$100 right now. 
+If the call costs \$10 then you can buy the call and effectively free up \$90 to invest at the risk-free rate, which is good for you.
+Another way to look at it is that options are kind of like a delayed purchase with a fixed price of $\$K$ (which you are not obligated to exercise). 
+If you have $\$K e^(-r T)$ dollars today, then you can afford to exercise the option at expiration.
+The higher $r$ is, the less cash you need to have now to do this, which makes the call more attractive.
+Therefore _calls gain value when interest rates increase_.
+
+*Puts:*
+$P = K T e^(-r T) Phi(-d_2)$  
+For small $r$, and at-the-money (ATM), this is approximately  
+$P approx 0.5 K T (1 - r T)$.  
+Since the last term $-r T$ reduces the value of the put, we see that _puts lose value when interest rates increase_.
+Why?  
+Unlike calls, a put option behaves more like a _prepaid insurance policy_ against a stock decline. If you want to short a stock, one alternative is simply _borrowing and selling the stock today_, which costs _nothing upfront_ and gives you _cash in hand_ that you can invest at the risk-free rate.
+
+However, buying a put requires _paying upfront_, which means you have _less money to invest elsewhere_. When interest rates rise, this opportunity cost becomes larger, making puts _less attractive_.
+Another way to see this:  
+- A put option gives you the right to _sell at a fixed price \( K \) in the future_.  
+- If interest rates are high, the present value of receiving \( K \) in the future _decreases_.  
+- This makes the put less valuable today because the strike price effectively "shrinks" in real terms as rates rise.  
 
 
 == Trader terminology
