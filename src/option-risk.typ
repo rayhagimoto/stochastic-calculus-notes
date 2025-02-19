@@ -31,6 +31,13 @@ So you can imagine taking the hockey stick function and convolving it with a Gau
 As you get closer to expiration, you get closer to the hockey stick curve. 
 At $S = K$ this function has effectively $+infinity$ convexity ($Gamma -> infinity$). This helps explain the presence of the $1 / sqrt(T)$ in the formula.
 
+#figure(
+  image("figs/gamma-versus-DTE.png", width:70%),
+  caption: [
+    Call option price assuming $K = 100$, $r = 0.05$, $sigma = 0.1$ versus spot for different DTEs shown in the legend. 
+    The legend also shows the $Gamma$ evaluated at the strike. It shows that 
+  ]
+)
 
 == Trader terminology
 
