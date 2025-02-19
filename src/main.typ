@@ -2,7 +2,7 @@
 
 #show : template
 
-#make-title("Stochastic Calculus")
+#make-title("Option Pricing")
 
 
 #include "introduction.typ" 
