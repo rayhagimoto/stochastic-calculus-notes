@@ -82,7 +82,7 @@ For small $r$, and at-the-money (ATM), this is approximately
 $P approx 0.5 K T (1 - r T)$.  
 Since the last term $-r T$ reduces the value of the put, we see that _puts lose value when interest rates increase_.
 Why?  
-Unlike calls, a put option behaves more like a _prepaid insurance policy_ against a stock decline. If you want to short a stock, one alternative is simply _borrowing and selling the stock today_, which costs _nothing upfront_ and gives you _cash in hand_ that you can invest at the risk-free rate.
+Unlike calls, a put option behaves more like a prepaid insurance policy against a stock decline. If you want to short a stock, one alternative is simply borrowing and selling the stock today, which costs nothing upfront and gives you cash in hand that you can invest at the risk-free rate.
 
 However, buying a put requires _paying upfront_, which means you have _less money to invest elsewhere_. When interest rates rise, this opportunity cost becomes larger, making puts _less attractive_.
 Another way to see this:  
