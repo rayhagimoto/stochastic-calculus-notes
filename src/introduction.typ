@@ -5,6 +5,9 @@ I want to present a derivation that is intuitive to people who have an understan
 
 = Futures and no-arbitrage pricing
 
+In this section I start by presenting an argument for the fair price of a contract called a future. 
+The purpose of this example is to provide a simple scenario in which we will see that the requirement of "no arbitrage" enforces a fair price, independent of the random nature of the asset price moves.
+
 #definition[
   A _future_ is a type of contract between two parties to trade an asset (the "underlying") at a fixed time $T$ in the future for a predetermined price $K$ known as the _strike_.
 ]
