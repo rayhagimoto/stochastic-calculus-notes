@@ -1,5 +1,6 @@
 #import "@local/templates:1.0.0" : *
 
+
 = The Greeks
 
 In the Black-Scholes model the value of the option is exposed to numerous factors, not just the stock price.
@@ -55,7 +56,7 @@ As you get closer to expiration, you get closer to the hockey stick curve.
 At $S = K$ this function has effectively $+infinity$ convexity ($Gamma -> infinity$). This helps explain the presence of the $1 / sqrt(T)$ in the formula.
 
 #figure(
-  image("figs/call_vs_spot.svg"),
+  image("figs/call_vs_spot.png"),
   caption: [
     Call option price assuming $K = 100$, $r = 0.05$, $sigma = 0.1$ versus spot for different DTEs shown in the legend. 
     The legend also shows the $Gamma$ evaluated at the strike. It shows that $Gamma$ decreases with $sqrt(T)$.

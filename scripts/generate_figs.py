@@ -3,6 +3,7 @@ from scipy.stats import norm
 import matplotlib.pyplot as plt
 from pathlib import Path
 from utils import color_gradient
+plt.rcParams['backend'] = "Cairo"
 if 'axion' in plt.style.available:
     plt.style.use('axion')
 
@@ -69,7 +70,8 @@ def plot_call_vs_spot():
     ax.set_xlabel('$S$')
     ax.set_ylabel('$C(S)$')
     ax.legend(frameon=False)
-    plt.savefig(OUT_PATH / 'call_vs_spot.svg', bbox_inches='tight')
+    plt.savefig(OUT_PATH / 'call_vs_spot.png', bbox_inches='tight', format="png")
+    plt.close()
 
 
 
