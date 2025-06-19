@@ -1,12 +1,7 @@
 {
-    "saveAndRun": {
-        "commands": [
-            {
-                "match": "\\.typ$",
-                "cmd": "export XDG_DATA_HOME=\"$HOME/.local/share\" && typst compile src/main.typ stochastic-calculus.pdf",
-                "useShortcut": false,
-                "silent": true
-            }
-        ]
+    "triggerTaskOnSave.tasks": {
+    "build": [
+        "*.typ",
+    ],
     }
 }

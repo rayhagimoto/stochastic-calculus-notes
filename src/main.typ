@@ -2,8 +2,7 @@
 
 #show : template
 
-#make-title("Option Pricing")
-
+#make-title("Options Pricing")
 
 #include "introduction.typ" 
 #include "ito-calculus.typ"
